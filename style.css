@@ -1,0 +1,59 @@
+body{
+	font-family: 'Helvetica';
+
+}
+
+#navbar{
+	display: flex;
+	justify-content:space-between;/* how we wanna move things left and right*/
+	position: fixed; /*keeps top portion to stay at top over things*/
+	width: 99%;
+}
+#navbarLeft {
+	display: flex;	/*flexbox*/
+	flex-direction: column;
+
+}
+
+#navbarLeft h1, #navbarLeft p{	
+	margin:0;
+	margin-bottom: 10px;
+}
+
+#navbarLeft button{
+	background-color: black;
+	color: white;	
+	cursor: pointer; /*adds hand over button when cursor on it*/
+	height: 34px;
+	width: 34px;
+	border-radius: 17px;/*makes button slightly round */
+	font-weight: bold; /*makes them thicc 400 reg 700 bold*/;
+	border: 2px solid black;
+
+}
+
+#navbarLeft button:hover{
+	background: white;
+	color: black;
+}
+
+#navbarLeft img{
+	height: 15px;
+	width: 15px;	
+}
+
+#navbarRight{
+	display:flex;
+	flex-direction: row;
+	align-items: flex-end;
+
+}
+#navbarRight p{
+	margin: 0px 10px; /* top right bottom left*/
+	cursor: pointer;
+}
+
+#navbarRight p:hover{
+	color: pink;
+
+}
