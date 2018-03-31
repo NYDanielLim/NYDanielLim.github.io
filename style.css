@@ -60,9 +60,12 @@ body{
 
 .project{
 	width: 300px;
+	
+	
 }
 .project h3, .project p{
 	margin: 5px 0;
+
 }
 
 .projectBtns{
