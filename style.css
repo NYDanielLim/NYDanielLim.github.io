@@ -58,6 +58,11 @@ body{
 
 }
 
+#projectBox{
+	display:flex;
+	
+	width: 900px;
+}
 .project{
 	width: 300px;
 	
@@ -65,6 +70,8 @@ body{
 }
 .project h3, .project p{
 	margin: 5px 0;
+
+
 
 }
 
