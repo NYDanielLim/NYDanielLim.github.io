@@ -60,6 +60,7 @@ body{
 
 #projectBox{
 	display:flex;
+	flex-wrap:wrap;
 	width: 900px;
 }
 .project{
