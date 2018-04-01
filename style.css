@@ -64,15 +64,19 @@ body{
 	width: 900px;
 }
 .project{
-	width: 300px;
+	width: 220px;
+	padding-left: 30px;
+	padding-bottom:50px;
 	
 	
 }
 .project h3, .project p{
 	margin: 5px 0;
+}
 
-
-
+.experience h3, .experience p{
+	margin: 5px 0;
+	padding-left: 30px;
 }
 
 .projectBtns{
