@@ -17,7 +17,14 @@ body{
 	flex-direction: column;
 	text-align:center;
 }
-
+.borderBox{
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0,0.4);
+    border-bottom: 1px solid rgba(255, 255, 255,0.4);
+    margin: 64px auto 44px;
+    width: 64px;
+}
 #navbarLeft h1{
 	font-weight: 300;
 }
@@ -152,6 +159,10 @@ body{
     background: blue;
     color: white;
 }
-
-
 /*code from w3 schools*/
+/*
+@media(max-width: 1000px){
+	#info{
+		flex:wrap;
+	}
+}*/
