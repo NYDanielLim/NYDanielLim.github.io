@@ -6,6 +6,8 @@
 	
 	<link href="style.css" type="text/css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
 </head>
 <body>
@@ -13,8 +15,10 @@
 <!-- Navbar Top -->
 <div id="navbar">
 	<div id="navbarLeft">
-		<h1>Daniel Lim</h1>
-		<p>Computer Engineer</p>
+		<div id="introText">
+		<h1>My name is <b>Daniel Lim</b>, and I'm currently a student at the University of Georgia. 
+				I'm looking for a Software Engineer position for Fall 2018</h1>
+		</div>
 		<div id="contact">
 			<a href="mailto:lim.daniel.10@gmail.com" class="fa fa-google"></a>
 			<a href="https://www.linkedin.com/in/cseedaniellim/" target="_blank" class="fa fa-linkedin"></a>
@@ -22,8 +26,8 @@
 		</div>
 	</div>
 	<div id="navbarRight">
-		<p>Projects</p>
-		<p>Experience</p>
+		<p onclick="scrollToProjects()">Projects</p>
+		<p onclick="scrollToExperience()">Experience</p>
 	</div>
 </div>
 
@@ -69,16 +73,18 @@
 		<div class="projectBtns">
 			<a href="https://google.com">Demo</a>
 			<a href="https://github.com/NYDanielLim/eznic">Source</a>
-			<a class="disabledBtn">Raspberry Pi</a>
+			<a class="disabledBtn">Raspberry Pi</a>	
 		</div>
 	</div>
 </div>
-<h1>Experience</h1>
+<div id="experienceBox">
+	<h1>Experience</h1>
 	<div class="experience">
 		<h3>GivDapps</h3>
 		<p>June 2017 - August 2017</p>
 		<p>Software Engineer Intern &#9830; Android Development</p>
 	</div>
-	<script src ="bomb.js" type="text/javascript"></script>
+</div>
+<script src ="script.js" type="text/javascript"></script>
 </body>
 </html>

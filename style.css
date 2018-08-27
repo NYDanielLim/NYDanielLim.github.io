@@ -1,20 +1,31 @@
 body{
-	font-family: 'Raleway';
+	font-family: 'Lato';
 
 }
 
 #navbar{
 	display: flex;
-	justify-content:space-between;/* how we wanna move things left and right*/
+	flex-direction: column;
+	align-items: center;/* allign items for vertical*/
+	justify-content: center;
 	/*position: fixed; /*keeps top portion to stay at top over things*/
-	width: 99%;
+	height: 100vh; /*makes it cover entire screen at beginning*/
+	margin: 0 50px;
 }
 #navbarLeft {
 	display: flex;	/*flexbox*/
 	flex-direction: column;
-
+	text-align:center;
 }
 
+#navbarLeft h1{
+	font-weight: 300;
+}
+#contact{
+	display:flex;
+	justify-content: center;
+	margin-bottom: 15px;	
+}
 #navbarLeft h1, #navbarLeft p{	
 	margin:0;
 	margin-bottom: 10px;
@@ -28,7 +39,7 @@ body{
 	width: 34px;
 	border-radius: 17px;/*makes button slightly round */
 	font-weight: bold; /*makes them thicc 400 reg 700 bold*/;
-	border: 2px solid black;
+	border: 2px solid black;		
 
 }
 
@@ -93,6 +104,7 @@ body{
 	border-radius: 5px;
 	margin-right: 10px;
 	font-size: 10px;
+	
 }
 
 .projectBtns a:hover{
@@ -114,7 +126,10 @@ body{
     width: 15px;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
+	border-radius: 50%;
+	margin: 0 10px;	
+
+	
 }
 
 /* Add a hover effect if you want */
