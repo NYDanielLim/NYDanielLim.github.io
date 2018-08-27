@@ -12,7 +12,7 @@ body{
 	height: 100vh; /*makes it cover entire screen at beginning*/
 	padding: 0 80px;
 	margin: 0;
-	background-color: #f6e8e5;
+	background-color: #f6e8e6;
 }
 #navbarLeft {
 	display: flex;	/*flexbox*/
