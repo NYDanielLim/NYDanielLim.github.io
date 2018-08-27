@@ -1,6 +1,6 @@
 body{
 	font-family: 'Lato';
-
+	margin:0;	
 }
 
 #navbar{
@@ -10,7 +10,9 @@ body{
 	justify-content: center;
 	/*position: fixed; /*keeps top portion to stay at top over things*/
 	height: 100vh; /*makes it cover entire screen at beginning*/
-	margin: 0 50px;
+	padding: 0 80px;
+	margin: 0;
+	background-color: #f6e8e5;
 }
 #navbarLeft {
 	display: flex;	/*flexbox*/
