@@ -1,5 +1,5 @@
 function scrollToProjects () {
-    var position = $("#projectBox").position();
+    var position = $("#projectTop").position();
     window.scrollTo({top: position.top, behavior: "smooth"});
 }
 function scrollToExperience () {

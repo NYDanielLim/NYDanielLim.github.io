@@ -77,28 +77,66 @@ body{
 	color: pink;
 
 }
-
+#projectTop{
+	height:10vh;
+	margin:0px;
+	padding:25px 0 0 25px;
+}
 #projectBox{
 	display:flex;
 	flex-wrap:wrap;
 	width: 900px;
+	height: 90vh; /*makes it cover entire screen at beginning*/
+	padding-left: 25px;
 }
 .project{
-	width: 220px;
+	width: 400px;
 	padding-left: 30px;
 	padding-bottom:50px;
-	
-	
 }
 .project h3, .project p{
 	margin: 5px 0;
 }
-
+#experienceBox h1{
+	margin: 0px;
+	padding: 25px;
+}
 .experience h3, .experience p{
 	margin: 5px 0;
 	padding-left: 30px;
 }
+.experience{
+	margin: 20px;
+}
+.experience p{
+	margin-left:20px;	
+}
+#experienceBox{
+	height: 85vh; /*makes it cover entire screen at beginning*/
+	background-color: #222c34;
+	color:#fff;
+	
+}
 
+
+#socialMediaBox{
+	display:flex;
+	width:100%;
+	height: 15vh;
+	justify-content: center;
+	background-color: black;
+}
+
+.socialMedia {
+	display: flex;
+	align-items: center;
+}
+.socialMedia a {
+	text-decoration: none;
+	color:	white;
+	margin: 30px;
+	
+}
 .projectBtns{
 	height: 30px;
 	display:flex;
@@ -137,8 +175,6 @@ body{
     text-decoration: none;
 	border-radius: 50%;
 	margin: 0 10px;	
-
-	
 }
 
 /* Add a hover effect if you want */
