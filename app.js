@@ -22,5 +22,12 @@ const navSlide = ()=>{
 	});
 	
 }
-
+function scrollToProjects () {
+    var position = $("#projectSection").position();
+    window.scrollTo({top: position.top, behavior: "smooth"});
+}
+function scrollToExperience () {
+    var position = $("#experienceBox").position();
+    window.scrollTo({top: position.top, behavior: "smooth"});
+}
 navSlide();
