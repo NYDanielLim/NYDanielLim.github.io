@@ -6,39 +6,101 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	
 </head>
 <body>
 
-	<nav>
-		<div class = "logo">
-			<h4>The Nav</h4>
+<div id="introScreen">
+	<div id="introBG"></div>
+	<div id ="welcomeMsg">
+		<div class="borderBox"></div>
+		<h1>Hi! My name is <b>Daniel Lim</b>, and I'm currently a student at the University of Georgia. 
+			I'm looking for a Software Engineer position for Fall 2019.</h1>
+	</div>
+	<div id ="contact">
+		<a href="mailto:lim.daniel.10@gmail.com" ><i class="far fa-envelope"></i></a>
+		<a href="https://www.linkedin.com/in/cseedaniellim/"><i class="fab fa-linkedin-in"></i></a>
+		<a href="https://github.com/NYDanielLim"><i class="fab fa-github"></i></a>
+	</div>
+	<div class="borderBox"></div>
+
+</div>
+
+<!-- Navbar Top -->
+<nav>
+	<div class = "logo">
+		<h4>The Nav</h4>
+	</div>
+	<ul class = "nav-links">
+		<li>
+			<a href="#">Home</a>
+		</li>
+		<li>
+			<a href="#">About</a>
+		</li>
+		<li>
+			<a href="#">Work</a>
+		</li>
+		<li>
+			<a href="#">Projects</a>
+		</li>
+	</ul>
+	<div class="burger">
+		<div class ="line1"></div>
+		<div class ="line2"></div>
+		<div class ="line3"></div>
+	</div>
+</nav>
+<!-- Navbar Top -->
+
+<div id="projectSection">
+	<h1>Projects</h1>
+	<div class="projects">
+		<div class="projectsText">
+			<h3>EZNIC</h3>
+			<p>Executable file that can change a computer's IP address, subnet mask, default gateway, and DNS address.</p>
+			<div class="projectBtns">
+				<a href="https://google.com">Demo</a>
+				<a href="https://github.com/NYDanielLim/eznic" target="_blank">Source</a>
+				<a class="disabledBtn">C#</a>
+				<a class="disabledBtn">CSS</a>
+				<a class="disabledBtn">HTML</a>
+			</div>
 		</div>
-		<ul class = "nav-links">
-			<li>
-				<a href="#">Home</a>
-			</li>
-			<li>
-				<a href="#">About</a>
-			</li>
-			<li>
-				<a href="#">Work</a>
-			</li>
-			<li>
-				<a href="#">Projects</a>
-			</li>
-		</ul>
-		<div class="burger">
-			<div class ="line1"></div>
-			<div class ="line2"></div>
-			<div class ="line3"></div>
+		<div class="projectsPic">
+			
 		</div>
-	</nav>
+	</div>
+	<div class="projects">
+		<div class="projectsText">
+			<h3>cMe</h3>
+			<p>Augmented Reality app for the iPhone that can help people or items by displaying an arrow on the screen toward the correct location.</p>
+			<div class="projectBtns">
+				<a href="https://google.com">Demo</a>
+				<a href="https://github.com/NYDanielLim/eznic" target="_blank">Source</a>
+				<a class="disabledBtn">Swift</a>
+				<a class="disabledBtn">AWS</a>
+				<a class="disabledBtn">xCode</a>
+			</div>
+		</div>
+		<div class="projectsPic">
 
-
-
-
-
+		</div>
+	</div>
+	<div class="projects">
+		<h3>3D Scanner Stylus</h3>
+		<p>Intented to give a person the ability to sketch an item and display that item onto the screen.</p>
+		<div class="projectBtns">
+			<a href="https://google.com">Demo</a>
+			<a href="https://github.com/NYDanielLim/eznic">Source</a>
+			<a class="disabledBtn">Arduino</a>
+			<a class="disabledBtn">LabVIEW</a>
+			<a class="disabledBtn">Lynx</a>
+		</div>
+	</div>
+</div>
 	<script src="app.js"></script>
 </body>
 </html>
