@@ -23,11 +23,15 @@ const navSlide = ()=>{
 	
 }
 function scrollToProjects () {
-    var position = $("#projectSection").position();
+    var position = $("#projectTop").position();
     window.scrollTo({top: position.top, behavior: "smooth"});
 }
 function scrollToExperience () {
-    var position = $("#experienceBox").position();
+    var position = $("#experienceTop").position();
+    window.scrollTo({top: position.top, behavior: "smooth"});
+}
+function scrollToTop () {
+    var position = $("#introScreen").position();
     window.scrollTo({top: position.top, behavior: "smooth"});
 }
 navSlide();
