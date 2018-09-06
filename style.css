@@ -1,9 +1,130 @@
+
 body{
-	font-family: 'Lato';
-	margin:0;	
+	font-family:Lato;
+	margin:0;
+	background-color:black;
+}
+ /* Nav Bar */
+nav{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	font-family:'Lato';
+	background-color: #0D1321; 
+	
 }
 
-#navbar{
+.logo{
+	color:white;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size:22px;
+}
+
+.nav-links{
+	display:flex;
+	justify-content: space-around;
+	width:60%;
+	color:white;
+}
+/*
+.nav-links a{
+	text-decoration: none;
+	color:white;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+}
+*/
+.nav-links p{
+	text-decoration: none;
+	color:white;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 17px;
+	cursor: pointer; /*adds hand over button when cursor on it*/
+}
+
+.burger{
+	display:none;
+	cursor: pointer;
+}
+.burger div{
+	width:25px;
+	height: 2px;
+	background-color: white;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+@media screen and (max-width: 1024px){
+	.nav-links{
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	body{
+		overflow-x: hidden;
+	}
+	.nav-links{
+		position: absolute;
+		right:0px;
+		height: 92vh;
+		top:8vh;
+		background-color: #0D1321;
+		color: black;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		width:50%;
+		transform:translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+
+	.nav-links li{
+		opacity: 0;
+		color:white;
+	}
+	.burger{
+		display:block;
+	}
+}
+
+.nav-active{
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity:0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity:1;
+		transform:translateX(0px);
+	}
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+	opacity:0;
+}
+
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+
+ /* Nav Bar */
+
+  /* Body */
+  
+
+#introScreen{	
+	color:white;	
 	display: flex;
 	flex-direction: column;
 	align-items: center;/* allign items for vertical*/
@@ -12,130 +133,125 @@ body{
 	height: 100vh; /*makes it cover entire screen at beginning*/
 	padding: 0 80px;
 	margin: 0;
-	background-color: #f6e8e6;
 }
-#navbarLeft {
-	display: flex;	/*flexbox*/
-	flex-direction: column;
-	text-align:center;
+#introBG{
+	
+	background-image: url("deskTwo.jpg");
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: .4;
+	position: fixed;
+	z-index: -1;
+	filter: blur(0px);
 }
+#welcomeMsg h1{
+	text-align: center;
+	font-weight: 300;
+}
+
+.projectsPic{
+	width: 800px;
+	margin:40px;
+	margin-right:75px;
+	box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
+}
+.projectsText{
+	width:80%;
+	font-size: 20px;
+}
+.projectsText h3{
+	font-size: 30px;
+	letter-spacing: .2em;
+}
+#proj1{
+	background: url("eznic.png") no-repeat center;
+	background-size:cover;
+}
+#proj2{
+	background: url("cme.png") no-repeat center;
+	background-size:cover;
+}
+#proj3{
+	background: url("3d.png") no-repeat center;
+	background-size:cover;
+}
+#datadawg{
+	background: url("datadawgs.png") no-repeat center;
+	background-size:cover;
+}
+
+#givdapps{
+	background: url("splashpage.jpg") no-repeat center;
+	background-size:cover;
+}
+
 .borderBox{
 	border: 0;
     height: 0;
-    border-top: 1px solid rgba(0, 0, 0,0.4);
-    border-bottom: 1px solid rgba(255, 255, 255,0.4);
-    margin: 64px auto 44px;
-    width: 64px;
+    border-top: 1.5px solid rgba(255, 255, 255,255);
+    border-bottom: 1.5px solid rgba(37, 31, 31, 0.158);
+    margin: 44px auto 44px;
+    width: 100px;
 }
-#navbarLeft h1{
-	font-weight: 300;
+.borderUnderline{
+	border: 0;
+    height: 0;
+    border-top: 1.5px solid rgba(255, 255, 255,255);
+    border-bottom: 1.5px solid rgba(37, 31, 31, 0.158);
+    margin: 24px auto 22px;
+    width: 200px;
 }
 #contact{
 	display:flex;
 	justify-content: center;
 	margin-bottom: 15px;	
 }
-#navbarLeft h1, #navbarLeft p{	
-	margin:0;
-	margin-bottom: 10px;
+#contact i{
+	color:white;
+	padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+	opacity: 0.7;
+}
+#contact i:hover{
+	color:#222c34;	
+	opacity:0.5;
 }
 
-#navbarLeft button{
-	background-color: black;
-	color: white;	
-	cursor: pointer; /*adds hand over button when cursor on it*/
-	height: 34px;
-	width: 34px;
-	border-radius: 17px;/*makes button slightly round */
-	font-weight: bold; /*makes them thicc 400 reg 700 bold*/;
-	border: 2px solid black;		
-
+#projectSection{
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	color:#FFFCF2;
+	background-color: #84828F;
 }
 
-#navbarLeft button:hover{
-	background: white;
-	color: black;
-}
+#projectSection h1{
+	font-size: 40px;
+	letter-spacing: .3em;
 
-#navbarLeft img{
-	height: 15px;
-	width: 15px;	
 }
-
-#navbarRight{
+#projectSection h3{
+	font-size: 30px;
+	letter-spacing: .2em;
+}
+.projects{
 	display:flex;
 	flex-direction: row;
-	align-items: flex-end;
-
+	margin:30px;
+	width:80%;
+	height:400px;
+	background-color:#8D8D92;
+	box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
+	font-size: 28px;	
+	padding-left:30px;
 }
-#navbarRight p{
-	margin: 0px 10px; /* top right bottom left*/
-	cursor: pointer;
-}
-
-#navbarRight p:hover{
-	color: pink;
-
-}
-#projectTop{
-	height:10vh;
-	margin:0px;
-	padding:25px 0 0 25px;
-}
-#projectBox{
-	display:flex;
-	flex-wrap:wrap;
-	width: 900px;
-	height: 90vh; /*makes it cover entire screen at beginning*/
-	padding-left: 25px;
-}
-.project{
-	width: 400px;
-	padding-left: 30px;
-	padding-bottom:50px;
-}
-.project h3, .project p{
-	margin: 5px 0;
-}
-#experienceBox h1{
-	margin: 0px;
-	padding: 25px;
-}
-.experience h3, .experience p{
-	margin: 5px 0;
-	padding-left: 30px;
-}
-.experience{
-	margin: 20px;
-}
-.experience p{
-	margin-left:20px;	
-}
-#experienceBox{
-	height: 85vh; /*makes it cover entire screen at beginning*/
-	background-color: #222c34;
-	color:#fff;
-	
-}
-
-
-#socialMediaBox{
-	display:flex;
-	width:100%;
-	height: 15vh;
-	justify-content: center;
-	background-color: black;
-}
-
-.socialMedia {
-	display: flex;
-	align-items: center;
-}
-.socialMedia a {
-	text-decoration: none;
-	color:	white;
-	margin: 30px;
-	
+.projects p{
+	font-size: 20px;
 }
 .projectBtns{
 	height: 30px;
@@ -147,9 +263,10 @@ body{
 	text-decoration: none;
 	background-color: black;
 	color:	white;
-	padding:5px;
+	padding:10px;
 	border-radius: 5px;
 	margin-right: 10px;
+	margin-left:10px;
 	font-size: 10px;
 	
 }
@@ -163,44 +280,64 @@ body{
 	background-color: gray !important; /* makes sure that this takes presedence */
 	cursor:default !important;
 }
+#experienceBox{
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	color:#FFFCF2;
+	background-color: #84828F;
 
-/*code from w3 schools*/
-
-/* Style all font awesome icons */
-.fa {
-    padding: 10px;
-    font-size: 10px;
-    width: 15px;
-    text-align: center;
-    text-decoration: none;
-	border-radius: 50%;
-	margin: 0 10px;	
+}
+#experienceBox h1{
+	
+	font-size: 30px;
+	letter-spacing: .2em;
+	padding-top:20px;
+}
+.experience{
+	display:flex;
+	flex-direction: row;
+	margin:30px;
+	width:80%;
+	height:400px;
+	background-color:#8D8D92;
+	box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
+	font-size: 28px;	
+	padding-left:30px;
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-    opacity: 0.7;
+#socialMediaBox{
+	display:flex;
+	flex-direction: column;
+	width:100%;
+	height: 12vh;
+	align-items: center;
+	
 }
+#socialMediaBox h1{
+	color:white;
 
-/* Set a specific color for each brand */
+}
+.socialMedia {
+	display: flex;
+	align-items: center;
+}
+.socialMedia a {
+	text-decoration: none;
+	color:	white;
+	margin: 30px;
+	font-size:20px;
+}
+.divider{
+	width:100%;
+	height:5vh;
 
-/* Facebook */
-.fa-github {
-    background:black;
-    color: white;
 }
-.fa-google {
-    background: red;
-    color: white;
+.divider h1{
+	font-size: 40px;
+	letter-spacing: .3em;
+	color:white;
+	display: flex;
+	justify-content: center;
 }
-.fa-linkedin {
-    background: blue;
-    color: white;
-}
-/*code from w3 schools*/
-/*
-@media(max-width: 1000px){
-	#info{
-		flex:wrap;
-	}
-}*/
