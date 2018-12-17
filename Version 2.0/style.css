@@ -2,8 +2,7 @@
 body{
 	font-family:Lato;
 	margin:0;
-	background-color:#1b1b1c;
-	
+	background-color:black;
 }
  /* Nav Bar */
 nav{
@@ -131,7 +130,7 @@ nav{
 	align-items: center;/* allign items for vertical*/
 	justify-content: center;
 	/*position: fixed; /*keeps top portion to stay at top over things*/
-	height: 80vh; /*makes it cover entire screen at beginning*/
+	height: 100vh; /*makes it cover entire screen at beginning*/
 	padding: 0 80px;
 	margin: 0;
 }
@@ -142,25 +141,54 @@ nav{
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	opacity: 0.5;
+	opacity: .4;
 	position: fixed;
 	z-index: -1;
 	filter: blur(0px);
 }
 #welcomeMsg{
 	margin-top:80px;
-	text-align: center;
 }
-#welcomeMsg h2{
-	font-weight: 300;
-	
-}
-
 #welcomeMsg h1{
-	font-size: 50px;
-	
+	text-align: center;
+	font-weight: 300;
 }
 
+.projectsPic{
+	width: 800px;
+	margin:40px;
+	margin-right:75px;
+	box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
+}
+.projectsText{
+	width:80%;
+	font-size: 20px;
+}
+.projectsText h3{
+	font-size: 30px;
+	letter-spacing: .2em;
+}
+#proj1{
+	background: url("eznic.png") no-repeat center;
+	background-size:cover;
+}
+#proj2{
+	background: url("cme.png") no-repeat center;
+	background-size:cover;
+}
+#proj3{
+	background: url("3d.png") no-repeat center;
+	background-size:cover;
+}
+#datadawg{
+	background: url("datadawgs.png") no-repeat center;
+	background-size:cover;
+}
+
+#givdapps{
+	background: url("splashpage.jpg") no-repeat center;
+	background-size:cover;
+}
 
 .borderBox{
 	border: 0;
@@ -182,7 +210,6 @@ nav{
 #contact{
 	display:flex;
 	justify-content: center;
-
 	margin-bottom: 8px;	
 }
 #projectTop{
@@ -193,7 +220,6 @@ nav{
 	padding: 10px;
     font-size: 30px;
     text-align: center;
-
     text-decoration: none;
 	opacity: 0.7;
 }
@@ -233,26 +259,109 @@ nav{
 	opacity:0.5;
 }
 
+#projectSection{
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	color:#FFFCF2;
+	
+}
+
+#projectSection h1{
+	font-size: 40px;
+	letter-spacing: .3em;
+
+}
+#projectSection h3{
+	font-size: 30px;
+	letter-spacing: .2em;
+}
+.projects{
+	border-radius: 25px;
+	display:flex;
+	flex-direction: row;
+	margin:30px;
+	width:80%;
+	height:400px;
+	background-color:#33332E;
+	box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
+	font-size: 28px;	
+	padding-left:30px;
+}
+.projects p{
+	font-size: 20px;
+}
+.projectBtns{
+	height: 30px;
+	display:flex;
+	align-items:center; /*Makes it so that the buttons dont take height of container in flexbox*/
+
+}
+.projectBtns a{
+	text-decoration: none;
+	background-color: black;
+	color:	white;
+	padding:10px;
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-left:10px;
+	font-size: 10px;
+	
+}
+
+.projectBtns a:hover{
+	background-color: blue;
+	cursor:pointer;
+}
+
+.disabledBtn{
+	background-color: gray !important; /* makes sure that this takes presedence */
+	cursor:default !important;
+}
+#experienceBox{
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	color:#FFFCF2;
+	
+
+}
+#experienceBox h1{
+	
+	font-size: 30px;
+	letter-spacing: .2em;
+	padding-top:20px;
+}
+.experience{
+	border-radius: 25px;
+	display:flex;
+	flex-direction: row;
+	margin:30px;
+	width:80%;
+	height:400px;
+	background-color:#33332E;
+	box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
+	font-size: 28px;	
+	padding-left:30px;
+}
 
 #socialMediaBox{
 	display:flex;
 	flex-direction: column;
 	width:100%;
-	font-weight:300;
 	height:169px;
 	align-items: center;
-	background-color: #1b1b1c; 
+	background-color:#0D1321; 
 	
 }
 #socialMediaBox h1, #socialMediaBox p{
 	color:white;
-	font-weight:300;
-
 }
 #socialMediaBox p{
 	margin-top:5px;
 	font-size:25px;
-
 }
 .socialMedia {
 	display: flex;
@@ -325,172 +434,3 @@ nav{
 	-webkit-animation-delay: -0.3s;
 	animation-delay: -0.3s; }
   
-  
-
-
-
-#aboutMe{
-
-	height : 310vh;
-	opacity : 0 ;
-	background: white;
-}
-#aboutMe h1{
-	padding-left:330px;
-	padding-right:350px;
-	font-weight: 300;
-	
-}
-
-#experienceBox{
-
-	background:white;
-	margin-left:100px;
-	margin-right:100px;
-	margin-top:200px;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    margin-bottom: 30px;
-    height:160vh;
-    
-
-    
-}
-#workExperience{
-	background:white;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    margin-bottom: 30px;
-    height:40vh;
-    font-weight: 300;
-    width: 500px;
-
-    margin-top:60px;
-}
-#hackathonExperience{
-	background:white;
-	font-weight: 300;
-	margin-top:60px;
-	
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    margin-bottom: 30px;
-    height:40vh;
-    width: 500px;
-
-}
-
-#extraInfoBox{
-	background:white;
-	margin-left:100px;
-	margin-right:100px;
-	margin-top:50px;
-    
-    margin-bottom: 30px;
-    height:50vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-#extraInfoBox h1{
-	padding: 0;
-	text-align: center;
-}
-.projectsPic{
-	width: 800px;
-	margin:40px;
-	margin-right:75px;
-	box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
-}
-.projectsText{
-	width:80%;
-	font-size: 20px;
-}
-.projectsText h3{
-	font-size: 30px;
-	letter-spacing: .2em;
-}
-#proj1{
-	background: url("imhungry.png") no-repeat center;
-	background-size:cover;
-}
-#proj2{
-	background: url("familyfinder.png") no-repeat center;
-	background-size:cover;
-}
-#proj3{
-	background: url("seatmonitor.png") no-repeat center;
-	background-size:cover;
-}
-#datadawg{
-	background: url("datadawgs.png") no-repeat center;
-	background-size:cover;
-}
-
-#givdapps{
-	background: url("splashpage.jpg") no-repeat center;
-	background-size:cover;
-}
-
-#projectSection{
-	width: 100%;
-	display:flex;
-	flex-direction: column;
-	align-items: center;
-	color:black;
-	
-}
-.projects{
-	border-radius: 25px;
-	display:flex;
-	flex-direction: row;
-	margin:30px;
-	width:80%;
-	height:400px;
-	background-color:#FFFFFF;
-	box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
-	font-size: 28px;	
-	padding-left:30px;
-}
-
-.projectBtns{
-	height: 30px;
-	display:flex;
-	align-items:center; /*Makes it so that the buttons dont take height of container in flexbox*/
-
-}
-.projectBtns a{
-	text-decoration: none;
-	background-color: black;
-	color:	white;
-	padding:10px;
-	border-radius: 5px;
-	margin-right: 10px;
-	margin-left:10px;
-	font-size: 10px;
-	
-}
-
-.projectBtns a:hover{
-	background-color: blue;
-	cursor:pointer;
-}
-
-.disabledBtn{
-	background-color: gray !important; /* makes sure that this takes presedence */
-	cursor:default !important;
-}
-.extraInfoText{
-	width:80%;
-	font-size: 20px;
-	padding-left:40px;
-}
-.extraInfoText h3{
-	font-size: 30px;
-	letter-spacing: .2em;
-	margin-bottom: 0px;
-}
-.extraInfoText p{
-	margin-bottom: 0px;
-	margin-top:0px;
-}

@@ -6,154 +6,137 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	
 </head>
 <body>
+	<div id="introScreen">
 
-<div id="introScreen">
-	<div id="introBG"></div>
-	<div id ="welcomeMsg">
+		<div id="introBG"></div>
+		<div id ="welcomeMsg">
+			<div class="borderBox"></div>
+			<h1><b>Daniel Lim</b></h1>
+			<h2>Software Engineer</h2>
+		</div>
 		<div class="borderBox"></div>
-		<h1>Hi! My name is <b>Daniel Lim</b>, and I'm currently a student at the University of Georgia. 
-			I'm looking for a Software Engineer position for Fall 2019.</h1>
-	</div>
-	<div class="borderBox"></div>
-	<div id ="contact">
-		<a href="mailto:lim.daniel.10@gmail.com" ><i class="far fa-envelope"></i></a>
-		<a href="https://www.linkedin.com/in/cseedaniellim/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-		<a href="https://github.com/NYDanielLim" target="_blank"><i class="fab fa-github"></i></a>
-	</div>
-	<div id="resumeButton">
-		<p>Resume:</p>
-		<a href="https://drive.google.com/file/d/16X6V7osbDGYVP-2lA63MEQ0kwiVUoz6L/view?usp=sharing" target="_blank"><i class="fas fa-file"></i></a>
-	</div>
+		<div id ="contact">
+			<a href="mailto:lim.daniel.10@gmail.com" ><i class="far fa-envelope"></i></a>
+			<a href="https://www.linkedin.com/in/cseedaniellim/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://github.com/NYDanielLim" target="_blank"><i class="fab fa-github"></i></a>
+		</div>
+		<div id="resumeButton">
+			<p>Resume:</p>
+			<a href="https://drive.google.com/file/d/16X6V7osbDGYVP-2lA63MEQ0kwiVUoz6L/view?usp=sharing" target="_blank"><i class="fas fa-file"></i></a>
+		</div>
 <!--
 	<div id="downButton">
 		<i class="fas fa-arrow-circle-down" onclick="scrollToNav()"></i>
 	</div>-->
 	<span class="tcon-indicator" onclick="scrollToNav()"aria-label="scroll" aria-hidden="true" >
-			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="tcon-svgchevron" viewBox="0 0 30 36">
-			  <path class="a3" d="M0,0l15,16L30,0"></path>
-			  <path class="a2" d="M0,10l15,16l15-16"></path>
-			  <path class="a1" d="M0,20l15,16l15-16"></path>
-			</svg>
-		  </span>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="tcon-svgchevron" viewBox="0 0 30 36">
+			<path class="a3" d="M0,0l15,16L30,0"></path>
+			<path class="a2" d="M0,10l15,16l15-16"></path>
+			<path class="a1" d="M0,20l15,16l15-16"></path>
+		</svg>
+	</span>
 </div>
+<div id="aboutMe">
+	<h1 style="padding-top:200px">
+		Hi!
+	</h1>
+	<h1>
+		I'm a Computer Systems Engineer major studying at the University of Georgia. I'm currently looking for full time opportunities for Fall 2019 with interests in software, web, and full stack development.
+	</h1>
+	<h1>When i'm not at the computer coding, I enjoy swimming, making videos, and playing video/board games!</h1>
 
-<!-- Navbar Top -->
-<nav>
-	<div class = "logo">
-		<h4>Daniel Lim</h4>
-	</div>
-	<ul class = "nav-links">
-		<li>
-			<p onclick="scrollToTop()">Home</p>
-		</li>
-		<li>
-			<!--<a href="#">About</a>-->
-			<p onclick="scrollToProjects()">About</p>
+	<div id="experienceBox" style="padding-top:50px">
+		<h1 style="text-align: center">Personal Projects</h1>
+		<div id="projectSection">
 
-		</li>
-		<li>
-			<p onclick="scrollToExperience()">Experience</p>
-		</li>
-		<li>
-			<p onclick="scrollToProjects()">Projects</p>
-		</li>
-	</ul>
-	<div class="burger">
-		<div class ="line1"></div>
-		<div class ="line2"></div>
-		<div class ="line3"></div>
-	</div>
-</nav>
-<!-- Navbar Top -->
-<div class="divider">
-	<h1 id="projectTop">Projects</h1>
-</div>
-<div class="borderUnderline"></div>
-<div id="projectSection">
-	
-	<div class="projects">
-		<div class="projectsText">
-			<h3>EZNIC</h3>
-			<p>Executable file that can change a computer's IP address, subnet mask, default gateway, and DNS address.</p>
-			<div class="projectBtns">
-				<a href="https://google.com">Demo</a>
-				<a href="https://github.com/NYDanielLim/eznic" target="_blank">Source</a>
-				<a class="disabledBtn">C#</a>
-				<a class="disabledBtn">CSS</a>
-				<a class="disabledBtn">HTML</a>
+			<div class="projects">
+				<div class="projectsText">
+					<h3>I'm Hungry</h3>
+					<p>The mobile app for hungry indecisive people. It helps locate nearby food locations based on certain search parameters.</p>
+					<div class="projectBtns">
+						<a class="disabledBtn">Zomato API</a>
+						<a class="disabledBtn">Java</a>
+						<a class="disabledBtn">Android Studios</a>
+						<a class="disabledBtn">Firebase</a>
+					</div>
+				</div>
+				<div class="projectsPic" id="proj1">
+
+				</div>
+			</div>
+			<div class="projects">
+				<div class="projectsText">
+					<h3>Family Finder</h3>
+					<p>The idea behind this project is that one can locate a family member’s mobile device and view their location on a website.</p>
+					<div class="projectBtns">
+						<a class="disabledBtn">HTML</a>
+						<a class="disabledBtn">CSS</a>
+						<a class="disabledBtn">Javascript</a>
+						<a class="disabledBtn">Ajax</a>
+
+					</div>
+				</div>
+				<div class="projectsPic" id="proj2">
+
+				</div>
+			</div>
+			<div class="projects">
+				<div class="projectsText">
+					<h3>Room Finder</h3>
+					<p>This website application is designed around the need of finding rooms during finals season. The premise is that users can look online to find vacant rooms at a study hall.</p>
+					<div class="projectBtns">
+						<a class="disabledBtn">Python</a>
+						<a class="disabledBtn">Django</a>
+						<a class="disabledBtn">HTML</a>
+						<a class="disabledBtn">CSS</a>
+					</div>
+				</div>
+				<div class="projectsPic" id="proj3">
+
+				</div>
 			</div>
 		</div>
-		<div class="projectsPic" id="proj1">
-			
-		</div>
 	</div>
-	<div class="projects">
-		<div class="projectsText">
-			<h3>cMe</h3>
-			<p>Augmented Reality app for the iPhone that can help people or items by displaying an arrow on the screen toward the correct location.</p>
-			<div class="projectBtns">
-				<a href="https://google.com">Demo</a>
-				<a href="https://github.com/NYDanielLim/eznic" target="_blank">Source</a>
-				<a class="disabledBtn">Swift</a>
-				<a class="disabledBtn">AWS</a>
-				<a class="disabledBtn">Xcode</a>
-			</div>
-		</div>
-		<div class="projectsPic" id="proj2">
-			
-		</div>
-	</div>
-	<div class="projects">
-		<div class="projectsText">
-			<h3>3D Scanner Stylus</h3>
-			<p>Intented to give a person the ability to sketch an item and display that item onto the screen.</p>
-			<div class="projectBtns">
-				<a href="https://google.com">Demo</a>
-				<a href="https://github.com/NYDanielLim/eznic">Source</a>
-				<a class="disabledBtn">Arduino</a>
-				<a class="disabledBtn">LabVIEW</a>
-				<a class="disabledBtn">Lynx</a>
-			</div>
-		</div>
-		<div class="projectsPic" id="proj3">
-			
-		</div>
-	</div>
-</div>
-<div class="divider">
-	<h1 id="experienceTop">Experience</h1>
-</div>
-<div class="borderUnderline"></div>
-<div id="experienceBox">
-	
-	<div class="experience">
-		<div class="projectsText">
+
+	<div id="extraInfoBox">
+		<div id="workExperience">
+			<h1>Experience</h1>
+			<div class="extraInfoText">
 			<h3>Data Dawgs</h3>
 			<p>May 2018 - Present</p>
 			<p>Vice President</p>
+			<a href="https://github.com/NYDanielLim" target="_blank">Github</a>
 		</div>
-		<div class="projectsPic" id="datadawg">
-			
-		</div>
-	</div>
-	
-	<div class="experience">
-		<div class="projectsText">
+		<div class="extraInfoText">
 			<h3>GivDapps</h3>
 			<p>June 2017 - August 2017</p>
 			<p>Software Engineer Intern &#9830; Android Development</p>
 		</div>
-		<div class="projectsPic" id="givdapps">
-			
+
 		</div>
+		<div id="hackathonExperience">
+			<h1>Hackathons</h1>
+			<div class="extraInfoText">
+			<h3>HACKGSU 2018</h3>
+			<p>Won the Home Depot Challenge Hack award</p>
+			<a href="https://github.com/NYDanielLim" target="_blank">Github</a>
+		</div>
+		<div class="extraInfoText">
+			<h3>HACKUGA 2018</h3>
+			<p>Won the Diversified "NIC of Time" Challenge award</p>
+		</div>
+		</div>
+
 	</div>
-	
 </div>
+
+
 <div id="socialMediaBox">
 	<div id="socialMediaHeader">
 		<h1>Contact Me!</h1>
@@ -167,6 +150,10 @@
 		<a href="https://devpost.com/NYDanielLim?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank">DevPost</a>
 	</div>
 </div>
-	<script src="script.js"></script>
+
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
