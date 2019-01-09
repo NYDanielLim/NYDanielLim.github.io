@@ -395,6 +395,10 @@ html{
 
 @media(max-width: 1250px) {
  
+ #aboutMe h1{
+ 	padding-left: 130px;
+ 	padding-right: 130px;
+ }
   .projects {
     flex-direction: column;
     height: 600px;
@@ -414,8 +418,6 @@ html{
 
   #extraInfoBox{
 	background:white;
-	margin-left:100px;
-	margin-right:100px;
 	margin-top:50px;
     align-items: center;
     margin-bottom: 30px;
@@ -447,8 +449,6 @@ html{
 
   #extraInfoBox{
 	background:white;
-	margin-left:100px;
-	margin-right:100px;
 	margin-top:50px;
     
     margin-bottom: 30px;
@@ -483,8 +483,6 @@ html{
 
   #extraInfoBox{
 	background:white;
-	margin-left:100px;
-	margin-right:100px;
 	margin-top:50px;
     
     margin-bottom:30px;
