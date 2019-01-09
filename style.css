@@ -20,7 +20,7 @@ html{
 	align-items: center;/* allign items for vertical*/
 	justify-content: center;
 	/*position: fixed; /*keeps top portion to stay at top over things*/
-	height: 80vh; /*makes it cover entire screen at beginning*/
+	height: 100vh; /*makes it cover entire screen at beginning*/
 	
 	width:100%;
 	margin: 0;
