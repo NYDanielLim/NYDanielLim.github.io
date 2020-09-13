@@ -1,56 +1,46 @@
-
-
-
-/*
-function scrollToProjects () {
-    var position = $("#projectTop").position();
-    window.scrollTo({top: position.top, behavior: "smooth"});
-}
-function scrollToExperience () {
-    var position = $("#experienceTop").position();
-    window.scrollTo({top: position.top, behavior: "smooth"});
-}
-function scrollToTop () {
-    var position = $("#introScreen").position();
-    window.scrollTo({top: position.top, behavior: "smooth"});
-}
-function scrollToNav () {
-    var position = $("nav").position();
-    window.scrollTo({top: position.top, behavior: "smooth"});
-}
-!function(r,n){"function"==typeof define&&define.amd?define(n):"object"==typeof exports?module.exports=n():r.transformicons=n()}(this||window,function(){"use strict";var r={},n={transform:["click"],revert:["click"]},t=function(r){return"string"==typeof r?Array.prototype.slice.call(document.querySelectorAll(r)):void 0===r||r instanceof Array?r:[r]},o=function(r){return"string"==typeof r?r.toLowerCase().split(" "):r},e=function(r,e,f){var i=(f?"remove":"add")+"EventListener",s=t(r),a=s.length,u={};for(var l in n)u[l]=e&&e[l]?o(e[l]):n[l];for(;a--;)for(var d in u)for(var m=u[d].length;m--;)s[a][i](u[d][m],c)},c=function(n){r.toggle(n.currentTarget)};return r.add=function(n,t){return e(n,t),r},r.remove=function(n,t){return e(n,t,!0),r},r.transform=function(n){return t(n).forEach(function(r){r.classList.add("tcon-transform")}),r},r.revert=function(n){return t(n).forEach(function(r){r.classList.remove("tcon-transform")}),r},r.toggle=function(n){return t(n).forEach(function(n){r[n.classList.contains("tcon-transform")?"revert":"transform"](n)}),r},r});
-
-*/
-
-$(document).scroll(function() {
-  	var distance = $(window).scrollTop();
-   	var scroll = $(window).scrollTop();
-	var currentScrollTop = $(window).scrollTop();
-    var position = $("#about").position();
-    if(distance>400){
-    	$('#introBG').css({
-				          transition: 'opacity 0.5s ease-in-out',
-				          "opacity" : "0.0000"
-				      });
-    	$('#aboutMe').css({
-				          transition: 'opacity 0.5s ease-in-out',
-				              "background-color": "white",
-				              "opacity" : "1"
-				      });
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var options = {
+        edge: 'right',
+        draggable: true,
+        inDuration: 250,
+        outDuration: 200,
+        onOpenStart: null,
+        onOpenEnd: null,
+        onCloseStart: null,
+        onCloseEnd: null,
+        preventScrolling: true
     }
-    else{
-    
-    	$('#introBG').css({
-				          transition: 'opacity 0.5s ease-in-out',
-				          "opacity" : "0.5"
+    var instances = M.Sidenav.init(elems, options);
+  });
 
-				      });
-    	$('#aboutMe').css({
-				          transition: 'opacity 0.5s ease-in-out',		              
-				              "opacity" : "0"
-				      });
-    }
-    
-    
+// Hides and shows navbar depending on scroll position
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    var position = $("#home").position();
+
+    var $nav = $(".navbar-fixed");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 });
+
+function scrollToExperience() {
+	var position = $("#experience").position();
+	window.scrollTo({top: position.top - 50, behavior: "smooth"});
+}
+
+function scrollToHome () {
+	var position = $("#home").position();
+	window.scrollTo({top: position.top - 50, behavior: "smooth"});
+}
+
+function scrollToAbout () {
+	var position = $("#aboutMe").position();
+	window.scrollTo({top: position.top - 50, behavior: "smooth"});
+}
+
+function scrollToContact () {
+	var position = $("#socialMediaBox").position();
+	window.scrollTo({top: position.top - 50, behavior: "smooth"});
+}
 

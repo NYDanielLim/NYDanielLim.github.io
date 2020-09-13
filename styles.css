@@ -1,0 +1,227 @@
+nav {
+    background-color: black;
+}
+
+.nav-wrapper a {
+    color: black !important;
+}
+
+#home {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.navbar-fixed{
+    transition: background-color 400ms linear;
+}
+
+.navbar-fixed.scrolled {
+    background-color: #b2b2b2 !important;
+    transition: background-color 400ms linear;
+}
+
+#contact a{
+    color:black;
+}
+@media only screen and (max-width: 600px) {
+    .row.valign-wrapper {
+        display: inherit;
+    }
+}
+
+#headshot {
+    width: 75%;
+    margin: auto;
+    display: block;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+#aboutMe {
+    margin-top: 150px;
+}
+
+#experience {
+    margin-top: 100px;
+    display: block;
+}
+
+.experienceImage {
+    margin: auto;
+    display: block;
+}
+
+.borderBox {
+    background: white;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.projectBtns {
+    margin-top: 30px;
+    height: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /*Makes it so that the buttons dont take height of container in flexbox*/
+}
+
+.projectBtns a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.disabledBtn {
+    background-color: gray !important;
+    /* makes sure that this takes presedence */
+    cursor: default !important;
+}
+
+#hackathonExperience {
+    background: white;
+    font-weight: 300;
+    margin-top: 60px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-bottom: 30px;
+    height: 400px;
+    width: 500px;
+}
+
+#hackathonExperience h2 {
+    text-align: center;
+    padding: 0;
+}
+
+#extraInfoBox {
+    background: white;
+    margin-top: 50px;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#extraInfoBox h1 {
+    padding: 0;
+    text-align: center;
+}
+
+.extraInfoText {
+    width: 80%;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+.extraInfoText h3 {
+    font-size: 30px;
+    letter-spacing: .2em;
+    margin-bottom: 0px;
+}
+
+.extraInfoText p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.extraInfoText a {
+    text-decoration: none;
+    color: red;
+}
+
+#extraInfoBox {
+    background: white;
+    margin-top: 50px;
+    align-items: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#socialMediaBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1b1b1c;
+}
+
+#socialMediaBox h3, #socialMediaBox p {
+    color: white;
+    font-weight: 300;
+}
+
+#socialMediaBox p {
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+}
+
+.socialMedia a {
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.link {
+    font-size: 26px;
+    font-weight: 600;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0.7em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    -webkit-transition: all 0.1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+.link:hover {
+    background-position: 0 0em;
+}
+
+.link-red {
+    background-image: linear-gradient(to bottom, rgba(255, 48, 48, 0.4) 0%, rgba(255, 48, 48, 0.4) 100%);
+}
+
+.link-orange {
+    background-image: linear-gradient(to bottom, rgba(255, 186, 0, 0.4) 0%, rgba(255, 186, 0, 0.4) 100%);
+}
+
+.link-yellow {
+    background-image: linear-gradient(to bottom, rgba(255, 253, 0, 0.4) 0%, rgba(255, 253, 0, 0.4) 100%);
+}
+
+.link-green {
+    background-image: linear-gradient(to bottom, rgba(1, 255, 0, 0.4) 0%, rgba(1, 255, 0, 0.4) 100%);
+}
+
+.link-blue {
+    background-image: linear-gradient(to bottom, rgba(48, 194, 255, 0.4) 0%, rgba(48, 194, 255, 0.4) 100%);
+}
+
+.link-purple {
+    background-image: linear-gradient(to bottom, rgba(87, 80, 255, 0.4) 0%, rgba(87, 80, 255, 0.4) 100%);
+}
